@@ -50,7 +50,6 @@ export 'src/model/events/room_key_request_content.dart';
 export 'src/model/events/secret_storage_default_key_content.dart';
 export 'src/model/events/secret_storage_key_content.dart';
 export 'src/model/events/tombstone_content.dart';
-export 'src/model/matrix_connection_exception.dart';
 export 'src/model/matrix_event.dart';
 export 'src/model/matrix_exception.dart';
 export 'src/model/matrix_keys.dart';
