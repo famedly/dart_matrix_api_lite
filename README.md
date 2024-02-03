@@ -1,3 +1,7 @@
+# Deprecation Notice:
+
+This package will soon be merged with the [Matrix Dart SDK](https://pub.dev/packages/matrix) and from there be available as a library, not a stand alone package anymore. We hope that this will save us some overhead when maintaining the code. If you rely on this package as stand alone and importing the whole Matrix Dart SDK just to use this library is not an option for you, please open an issue here: https://github.com/famedly/dart_matrix_api_lite/issues
+
 # Matrix API Lite
 
 This package is a dead simple data model over the client-server specification of https://matrix.org and is mostly used as a base for a more complete Matrix SDK.
@@ -28,17 +32,17 @@ from [matrix-spec](https://github.com/matrix-org/matrix-spec/).
 To regenerate the code, follow these steps:
 
 1. Clone both repositories next to each other
-  1.1 `git clone git@gitlab.com:famedly/company/frontend/dart_openapi_codegen.git`
-  1.2 `git clone git@gitlab.com:famedly/company/frontend/libraries/matrix_api_lite.git`
+  1.1 `git clone git@github.com:famedly/dart_openapi_codegen.git`
+  1.2 `git clone git@github.com:famedly/dart_matrix_api_lite.git`
 2. Execute the script in the dart_openapi_codegen directory:
 ```sh
 cd dart_openapi_codegen
-./scripts/matrix.sh ../matrix_api_lite/lib/src/generated
+./scripts/matrix.sh ../dart_matrix_api_lite/lib/src/generated
 cd ..
 ```
 3. Run the build_runner in the matrix_api_lite directory:
 ```sh
-cd matrix_api_lite
+cd dart_matrix_api_lite
 dart pub get
 dart run build_runner build
 ```
